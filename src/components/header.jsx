@@ -19,7 +19,7 @@ const Header = (props) => {
     return (
         <div classNameNameNameName="my-4">
             <h1 classNameNameNameName="mb-4">Github Jobs</h1>
-            <form className="row gy-2 gx-3 align-items-center">
+            <form className="row gy-2 gx-3 align-items-center" onSubmit={handleSubmit}>
                 <div className="col-auto">
                     <input type="text" className="form-control" placeholder="Job Title" value={title} onChange={handleTitleChange}/>
                 </div>
@@ -37,7 +37,7 @@ const Header = (props) => {
                     </div>
                 </div>
                 <div className="col-auto">
-                    <button type="submit" className="btn btn-primary" onSubmit={handleSubmit}>Search</button>
+                    <button type="submit" className="btn btn-primary">Search</button>
                 </div>
             </form>
         </div>
